@@ -1,1 +1,40 @@
+<!DOCTYPE html>
 
+<head>
+	<!-- Title for the App. -->
+	<title>Weather App</title>
+	<!-- CSS file to make style. -->
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- Div for card content. -->
+	<div class="container">
+		<!-- Div for Weather Card. -->
+		<div class="weather-card">
+			<h1 id="title">Weather App</h1>
+			<!-- Input box to search cities -->
+			<input type="text" id="search-input" placeholder="Enter city name">
+			<!-- Search button. -->
+			<button id="search-btn" onclick="weatherFn($('#search-input').val())">
+				Show Weather
+			</button>
+			<!-- Div for details. -->
+			<div id="weather-info">
+				<h3 id="city-name"></h3>
+				<p id="date"></p>
+				<p id="temperature"></p>
+				<p id="description"></p>
+				<p id="wind-speed"></p>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src="https://momentjs.com/downloads/moment.min.js">
+	</script>
+	<script src="script.js"></script>
+</body>
+
+</html>
