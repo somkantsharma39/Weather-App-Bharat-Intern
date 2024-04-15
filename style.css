@@ -1,1 +1,102 @@
+/* To style full body of the code. */
+body {
+	margin: 0;
+	font-family: sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-image: url(./sky.jpg);
+}
 
+/* Weahter App title. */
+#title{
+	color: #063153;
+}
+
+/* Container to text keeps in center. */
+.container {
+	text-align: center;
+}
+
+/* To show details in the card. */
+.weather-card {
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 50px;
+	padding: 20px;
+	box-shadow: 5px 5px 8px 5px rgb(55, 49, 49);
+	transition: transform 0.3s ease-in-out;
+	width: 450px;
+}
+
+/* For input box. */
+#search-input {
+	padding: 15px;
+	margin: 15px;
+	width: 70%;
+	border: 1px solid #ccc;
+	border-radius: 50px;
+	font-size: 16px;
+	transition: 0.3s ease, 0.3s ease;
+	box-shadow: 5px 5px 8px 5px rgb(55, 49, 49);
+}
+
+/* For Hovering over the input box. */
+#search-input:hover {
+	transform: scale(1.05);
+}
+
+/* Focus wothout outline. */
+#search-input:focus {
+	outline: none;
+}
+
+/* Dummy text in the input box. */
+#search-input::placeholder {
+	color: #989898;
+}
+
+/* Search button to get Weather details. */
+#search-btn {
+	padding: 10px;
+	background-color: #2196F3;
+	color: #fff;
+	border: none;
+	border-radius: 50px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s ease, 0.3s ease;
+	box-shadow: 5px 5px 8px 5px rgb(55, 49, 49);
+}
+
+/* Hovering over search button. */
+#search-btn:hover {
+	transform: scale(1.05);
+	background-color: #1565C0;
+}
+
+/* For Temprature. */
+#temperature {
+	font-size: 24px;
+	font-weight: bold;
+	margin: 8px 0;
+}
+
+/* For Weather description. */
+#description {
+	font-size: 18px;
+	margin-bottom: 10px;
+	color: #353e05;
+}
+
+/* Date & Time. */
+#date {
+	font-size: 20px;
+	color: rgb(152, 130, 20);
+}
+
+/* Wind speed. */
+#wind-speed {
+	font-size: 20px;
+	color: rgb(152, 130, 20);
+}
