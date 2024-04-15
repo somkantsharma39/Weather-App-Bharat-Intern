@@ -9,6 +9,11 @@ body {
 	background-image: url(./sky.jpg);
 }
 
+/* Weahter App title. */
+#title{
+	color: #063153;
+}
+
 /* Container to text keeps in center. */
 .container {
 	text-align: center;
