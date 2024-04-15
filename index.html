@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 
 <head>
-	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
+	<!-- Title for the App. -->
 	<title>Weather App</title>
+	<!-- CSS file tp make style. -->
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+	<!-- Div for card content. -->
 	<div class="container">
+		<!-- Div for Weather Card. -->
 		<div class="weather-card">
-			<h1 style="color: #063153;">
-				Weather App
-			</h1>
+			<h1 style="color: #063153;">Weather App</h1>
+			<!-- Input box to search cities -->
 			<input type="text" id="search-input" placeholder="Enter city name">
+			<!-- Search button. -->
 			<button id="search-btn" onclick="weatherFn($('#search-input').val())">
 				Show Weather
 			</button>
+			<!-- Div for details. -->
 			<div id="weather-info">
 				<h3 id="city-name"></h3>
 				<p id="date"></p>
@@ -25,6 +29,7 @@
 			</div>
 		</div>
 	</div>
+
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js">
 	</script>
 	<script src="https://momentjs.com/downloads/moment.min.js">
